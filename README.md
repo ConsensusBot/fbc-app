@@ -3,7 +3,40 @@
 Backend for https://findbitcoin.cash/ 
 
 
-### Links
+### Endpoints
+
+##### GET /treasures
+Returns a collection containing information for all treasures
+
+Example Response
+```
+  [
+    {
+      postId: '2958',
+      siteName: 'Staples',
+      walletAddress: 'bitcoincash:9D8FHDUSFGHWIHEIJDCJQIDFUCV97FDWS',
+      walletValue: 1000,
+      walletValueUSD: 20.5,
+      lastSeen: 'Fri, 09 Feb 2018 00:07:42 GMT',
+      claimed: false
+    },
+    {
+      postId: '2960',
+      siteName: 'Panera Bread',
+      walletAddress: 'bitcoincash:93858091809ncNDBFCBHOIDnisnuHdewerw',
+      walletValue: 2000,
+      walletValueUSD: 41,
+      lastSeen: 'Fri, 09 Feb 2018 00:07:42 GMT',
+      claimed: false
+    }
+  ]
+
+```
+
+##### GET /treasures/save?siteName=<`some-site-name`>&walletAddress=`<some-wallet-address>`&
+Serves a thank you page containing all the info that was saved to the database.  The page redirects to the main site after 8 seconds.
+
+### Useful stuff
 
 + [https://findbitcoin.cash/](https://findbitcoin.cash/)
 + [Get started](https://sailsjs.com/get-started)
