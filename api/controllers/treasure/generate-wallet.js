@@ -1,4 +1,7 @@
 const bch = require('bitcoincashjs');
+const qr = require('qr-image');
+
+        
 
 module.exports = function(req, res) {
 
@@ -22,7 +25,10 @@ module.exports = function(req, res) {
 
     wallets.push({
       cashaddress: onePrivateKey.toAddress().toString(bch.Address.CashAddrFormat),
+      cashQr: 'data:image/png;base64,'+new Buffer(qr.imageSync(onePrivateKey.toAddress().toString(bch.Address.CashAddrFormat))).toString('base64'),
       privatekey:  onePrivateKey.toString(),
+      // WIF format (compressed)
+      privatekeyQR: 'data:image/png;base64,'+new Buffer(qr.imageSync(onePrivateKey.toWIF())).toString('base64'),
       publickey: onePrivateKey.toPublicKey().toString()
     });
 

@@ -14,12 +14,17 @@ Example Response
 [
   {
     "cashaddress": "bitcoincash:qz8jlac3agksg8mgt7qq4ghgyvg7gsewxyee6vng05",
+    "cashQr": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AA ... bjAPNXP7qoAAAAASUVORK5CYII=",
     "privatekey": "d5d341382bf3724526aac47ee33bbc9bae4f4212628ce553c05a2814243162daaa8d",
+    "privatekey": "57b3df9b41417a88423fe5fcfb95366b5f9e62c317697cdfea1bccfa97eb2d79",
+    "privatekeyQR": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAADNCAAAAAA+16u1AAACSElEQVR42u3bS3LCMBAFQO ... P0lEQVR42u3bOXLDMB=",
     "publickey": "03dhc1306215717a0509b0eefcbcb6e86f1c7cbe278697f11338d9847cjc21c394d9979"
   },
   {
     "cashaddress": "bitcoincash:qz3l0efjs82v5mwgw809p7zyy5h6p707n8d952amj3h06e3",
+    "cashQr": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AA ... bjAPNXP7qoAAAAASUVORKAANSUh=",
     "privatekey": "0e78da95e8bf9c44d8gf11abc2f8sc507e0504d54e3409bf210ac7d323f53e14473",
+    "privatekeyQR": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAADNCAAAAAA+16u1AAACSElEQVR42u3bS3LCMBAFQO ... P0lEQVR42UhEUgAA=",
     "publickey": "02f8b453f7626a187e6260a48c48dx0f049d2b217h5a887dd0764c9f7819d8ef2c2f"
   },
   ...
