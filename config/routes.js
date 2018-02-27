@@ -31,6 +31,7 @@ module.exports.routes = {
   '/': 'BrochureController.welcome',
   'GET /treasures/save': 'TreasureController.save-treasure',
   'GET /treasures': 'TreasureController.get-treasures',
+  'GET /address/:quantity': 'TreasureController.generate-wallet',
   'GET /generate': {
     view: 'pages/fbc-paperwallet-code'
   }
